@@ -55,6 +55,10 @@
       <main class="main">
         <section id="section-1" class="section" data-stellar-background-ratio="0.5">
           <div class="container">
+          <!-- Add this div in your DOM where you want the inline div to be inserted by Chatlio, change height/width to fit your needs -->
+<div id="chatlioWidgetPlaceholder" style="margin: auto; height: 400px;width:400px;"></div>
+
+          <script id="cid0020000166364811443" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 777px;height: 600px;">{"handle":"gameinfosite","arch":"js","styles":{"a":"000066","b":100,"c":"FFFFFF","d":"FFFFFF","k":"000066","l":"000066","m":"000066","n":"FFFFFF","p":"10","q":"000066","r":100,"cnrs":"1","fwtickm":1}}</script>
             
             <div id="disqus_thread"></div>
             <script>
@@ -156,6 +160,14 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+    window._chatlio = window._chatlio||[];
+    !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline", "page"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.3");
+       n.setAttribute('data-widget-options', '{"embedInline": true}');
+       n.setAttribute('data-widget-id','c6f06ec6-cd53-4bab-57d2-cfd5dc1b71f4');
+       c.parentNode.insertBefore(n,c);
+    }();
+</script>
     </body>
 
 </html>
