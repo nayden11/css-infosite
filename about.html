@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 ">
+        <title>Gaming Site Aboutpage</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    </head>
+    <body>
+      <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"></a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+                <nav class="navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">HOME</a></li>
+                        <li class="active"><a href="about.html" class="bar-1">ABOUT</a></li>
+                        <li><a href="#" class="bar-1">SUPPORT</a></li>
+                        <li><a href="#" class="bar-1">LOGIN</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-form navbar-right">
+                  <form class="form-inline">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <a href="#" class="input-group-addon"><i class="fa fa-bars">  All</i></a>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <a href="#" class="input-group-addon"><i class="fa fa-search"></i></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>    
+        </header>
+
+      <main class="main">
+        <section id="section-1" class="section" data-stellar-background-ratio="0.5">
+          <div class="container">
+            
+
+              
+          </div>
+        </section>
+       
+        <section id="section-4" class="section" data-stellar-background-ratio="0.5">
+          <div class="d-t fluid-width fluid-height">
+            <div class="d-tc v-m fluid-width fluid-height">
+                <div class="container" data-stellar-vertical-offset="100">
+                    <h2 class="section-title text-center" style="color: #0a131a">Let's Get Started!</h2>
+                    <p class="text-center section-title" style="color: #0a131a">Gain exclusive access and partnership benifits by signing up today!</p>
+                    <div class="text-center section-title">
+                        <a href="#" class="btn btn-bot btn-lg">Join Us Now!</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer-social-nav">
+            <li>FOLLOW US</li>
+            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Condition</a></li>
+          </ul>
+        </div>
+      </footer>
+
+        <script>
+          function openModal() {
+            document.getElementById('myModal').style.display = "block";
+          }
+
+          function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+          }
+
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+        </script>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
